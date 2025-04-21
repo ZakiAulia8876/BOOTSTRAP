@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style>
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid p-5 bg-primary text-white text-center">
+    <h1>Selamat Datang</h1>
+    <p>Website Bootstrap Pertamaku</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active text-center">
+        <img src="img/BAJU3.jpg" class="w-50 img-fluid" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/baju1.jpg" class="w-50 img-fluid" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bajucowokkeren.jpg" class="w-50 img-fluid" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="container my-5">
+    <h1 class="text-center mb-4">About</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p>
+          Selamat datang di <strong>NAZA - FASHION</strong>, toko fashion online yang hadir untuk memberikan tren pakaian terkini dengan kualitas terbaik. Kami menawarkan berbagai koleksi pakaian untuk pria dan wanita yang stylish, nyaman, dan terjangkau. Temukan pilihan favoritmu di sini dan tampil lebih percaya diri setiap hari.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produk Section -->
+  <div id="produk" class="container my-5">
+    <div class="row g-4">
+      <!-- Produk 1: Urban Cool -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cowok1.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalUrbanCool">
+          <div class="card-body">
+            <h5 class="card-title">Urban Cool</h5>
+            <p class="card-text">Warna abu-abu kalemnya...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Urban Cool -->
+      <div class="modal fade" id="modalUrbanCool" tabindex="-1" aria-labelledby="modalUrbanCoolLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cowok1.jpg" class="img-fluid" alt="Urban Cool">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produk 2: Cream Classic -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cowok2.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalCreamClassic">
+          <div class="card-body">
+            <h5 class="card-title">Cream Classic</h5>
+            <p class="card-text">Kemeja lengan panjang warna krem dengan desain simpel dan elegan...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Cream Classic -->
+      <div class="modal fade" id="modalCreamClassic" tabindex="-1" aria-labelledby="modalCreamClassicLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cowok2.jpg" class="img-fluid" alt="Cream Classic">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produk 3: Savana Breeze -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cowok3.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalSavanaBreeze">
+          <div class="card-body">
+            <h5 class="card-title">Savana Breeze</h5>
+            <p class="card-text">Kemeja lengan pendek dengan bahan ringan dan warna beige natural...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Savana Breeze -->
+      <div class="modal fade" id="modalSavanaBreeze" tabindex="-1" aria-labelledby="modalSavanaBreezeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cowok3.jpg" class="img-fluid" alt="Savana Breeze">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produk 4: Sky Bloom -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cewek1.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalSkyBloom">
+          <div class="card-body">
+            <h5 class="card-title">Sky Bloom</h5>
+            <p class="card-text">Blouse wanita berwarna biru muda dengan detail bordir bunga yang feminin...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Sky Bloom -->
+      <div class="modal fade" id="modalSkyBloom" tabindex="-1" aria-labelledby="modalSkyBloomLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cewek1.jpg" class="img-fluid" alt="Sky Bloom">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produk 5: Choco Chic -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cewek2.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalChocoChic">
+          <div class="card-body">
+            <h5 class="card-title">Choco Chic</h5>
+            <p class="card-text">Blouse wanita warna cokelat dengan desain cropped dan kerah V yang elegan...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Choco Chic -->
+      <div class="modal fade" id="modalChocoChic" tabindex="-1" aria-labelledby="modalChocoChicLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cewek2.jpg" class="img-fluid" alt="Choco Chic">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Produk 6: Olive Bloom -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/baju cewek3.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalOliveBloom">
+          <div class="card-body">
+            <h5 class="card-title">Olive Bloom</h5>
+            <p class="card-text">Blouse katun hijau sage dengan motif bunga kecil yang manis...</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal untuk gambar Olive Bloom -->
+      <div class="modal fade" id="modalOliveBloom" tabindex="-1" aria-labelledby="modalOliveBloomLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/baju cewek3.jpg" class="img-fluid" alt="Olive Bloom">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+
+  <!-- Tim -->
+<div id="team" class="container text-center my-5">
+  <h2>Tim Kami</h2>
+  <p>Kenalan dengan tim hebat di balik proyek ini.</p>
+  <div class="row g-4 justify-content-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="card">
+        <img src="img/school.jpg" class="card-img-top img-fluid" alt="Zaki Aulia">
+        <div class="card-body">
+          <h5 class="card-title">ZAKI AULIA</h5>
+          <p class="card-text">KELAS XI RPL 2</p>
+          <a href="#" class="btn btn-primary">SALKEN</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="card">
+        <img src="img/adit.jpg" class="card-img-top img-fluid" alt="Aditya Pratama">
+        <div class="card-body">
+          <h5 class="card-title">ADITYA PRATAMA</h5>
+          <p class="card-text">KELAS XI RPL 2</p>
+          <a href="#" class="btn btn-primary">SALKEN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 justify-content-center mt-4">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="card">
+        <img src="img/aktar.jpg" class="card-img-top img-fluid" alt="Aktar Dodi Syahputra">
+        <div class="card-body">
+          <h5 class="card-title">AKTAR DODI SYAHPUTRA</h5>
+          <p class="card-text">KELAS XI RPL 2</p>
+          <a href="#" class="btn btn-primary">SALKEN</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="card">
+        <img src="img/nazwa.jpg" class="card-img-top img-fluid" alt="Nazwaz Keyla">
+        <div class="card-body">
+          <h5 class="card-title">NAZWA KEYLA</h5>
+          <p class="card-text">KELAS XI RPL 2</p>
+          <a href="#" class="btn btn-primary">SALKEN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Contact Us -->
+  <div id="contac-us" class="container my-5">
+    <h2 class="text-center mb-4">Hubungi Kami</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 NAZA - FASHION. All rights reserved.</p>
+    <p class="mb-0">Dibuat dengan ❤️ oleh Tim XI RPL 2</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</body>
+</html>
